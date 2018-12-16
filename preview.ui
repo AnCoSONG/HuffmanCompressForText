@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Preview</class>
+ <widget class="QWidget" name="Preview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>320</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 中等</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string> Preview Widget:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 中等</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Filename</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>5</y>
+      <width>30</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Berlin Sans FB</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_close{
+border-style:inset;
+
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+
+}
+QPushButton#pushButton_close:hover{
+background-color: rgb(255, 0, 0);
+	
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit#textEdit{
+background-color: rgb(255, 255, 255);
+selection-color: #0a214c; 
+selection-background-color: #C19A6B;
+border-radius:15px;
+border:1px solid #555;
+padding:5px;
+}
+QScrollBar:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+
+}
+QScrollBar::handle:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;   
+    min-height:20;
+}
+QScrollBar::handle:vertical:hover
+{
+    width:8px;
+    background:rgba(0,0,0,50%); 
+    border-radius:4px;
+    min-height:20;
+}
+QScrollBar::add-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/3.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/1.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/4.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/2.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>文件在准备或未正常打开</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>63</y>
+     <width>300</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>361</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 233, 239, 255), stop:1 rgba(157, 226, 255, 255));
+
+border-radius:20px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame_2</zorder>
+  <zorder>frame</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>line</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

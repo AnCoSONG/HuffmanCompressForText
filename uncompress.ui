@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uncompress</class>
+ <widget class="QWidget" name="uncompress">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>苹方 中等</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>导入哈夫曼编码JSON文件</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>55</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_json">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>75</y>
+     <width>250</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;
+
+padding:5px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>请导入JSON编码文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_input1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>75</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_input1{
+
+	background-color: rgb(255, 255, 255);
+	border-radius:5px;
+	
+
+}
+
+QPushButton#pushButton_input1:hover{
+background-color: rgb(54, 71, 30);
+	
+	color: rgb(255, 255, 255);
+	border-radius:5px;
+	
+
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>导入文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_uncompress">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>414</y>
+     <width>150</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_uncompress{
+
+background-color: rgb(255, 255, 255);
+border-radius:10px;
+
+}
+
+
+QPushButton#pushButton_uncompress:hover{
+background-color: rgb(0, 255, 127);
+	color: rgb(255, 255, 255);
+border-radius:10px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>解压并预览</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>414</y>
+     <width>150</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_save{
+
+background-color: rgb(255, 255, 255);
+border-radius:10px;
+
+}
+
+
+QPushButton#pushButton_save:hover{
+background-color: rgb(0, 255, 127);
+	color: rgb(255, 255, 255);
+border-radius:10px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>输出到文件</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>115</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>苹方 中等</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>导入哈夫曼(可带编码的)二进制文件</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>140</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit__huf">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>250</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;
+
+padding:5px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>请导入哈夫曼二进制文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_input2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>160</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_input2{
+
+	background-color: rgb(255, 255, 255);
+	border-radius:5px;
+	
+
+}
+
+QPushButton#pushButton_input2:hover{
+background-color: rgb(54, 71, 30);
+	
+	color: rgb(255, 255, 255);
+	border-radius:5px;
+	
+
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>导入文件</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>195</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>苹方 中等</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>预览</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>220</y>
+     <width>351</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>351</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>苹方 中等</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit#textEdit{
+background-color: rgb(255, 255, 255);
+selection-color: #0a214c; 
+selection-background-color: #C19A6B;
+border-radius:15px;
+
+padding:5px;
+}
+QScrollBar:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,0%);
+    margin:0px,0px,0px,0px;
+
+}
+QScrollBar::handle:vertical
+{
+    width:8px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;   
+    min-height:20;
+}
+QScrollBar::handle:vertical:hover
+{
+    width:8px;
+    background:rgba(0,0,0,50%); 
+    border-radius:4px;
+    min-height:20;
+}
+QScrollBar::add-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/3.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/1.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/4.png);
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical:hover
+{
+    height:9px;width:8px;
+    border-image:url(:/images/a/2.png);
+    subcontrol-position:top;
+}
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>在此预览二进制文件</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>421</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(255, 233, 239, 255), stop:1 rgba(157, 226, 255, 255));
+
+border-radius:20px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>30</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Berlin Sans FB</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_close{
+border-style:inset;
+
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+
+}
+QPushButton#pushButton_close:hover{
+background-color: rgb(255, 0, 0);
+	
+	color: rgb(255, 255, 255);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>line</zorder>
+  <zorder>lineEdit_json</zorder>
+  <zorder>pushButton_input1</zorder>
+  <zorder>pushButton_uncompress</zorder>
+  <zorder>pushButton_save</zorder>
+  <zorder>label_2</zorder>
+  <zorder>line_2</zorder>
+  <zorder>lineEdit__huf</zorder>
+  <zorder>pushButton_input2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>line_3</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>pushButton_close</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

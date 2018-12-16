@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>opinionFrame</class>
+ <widget class="QWidget" name="opinionFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>110</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frameshadow">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>190</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0.0170455, stop:0 rgba(150, 116, 249, 255), stop:1 rgba(106, 201, 255, 255));
+
+border-top-left-radius:10px;
+
+border-top-right-radius:10px;
+
+border-bottom-left-radius:10px;
+
+border-bottom-right-radius:10px;
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_close{
+border-style:inset;
+
+border-radius:15px;
+background-color: rgb(255, 255, 255);
+
+}
+QPushButton#pushButton_close:hover{
+background-color: rgb(255, 0, 0);
+	
+	color: rgb(255, 255, 255);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_txt">
+      <property name="font">
+       <font>
+        <family>苹方 常规</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_txt{
+background-color: rgb(255, 255, 255);
+border-color: rgb(64, 66, 68);
+
+border-radius:10px;
+padding:6px;
+}
+QPushButton#pushButton_txt:hover{
+background-color: rgb(0, 255, 127);
+
+
+border-width:2px;
+border-radius:10px;
+padding:6px;
+color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>压缩</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_huf">
+      <property name="font">
+       <font>
+        <family>苹方 常规</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_huf{
+background-color: rgb(255, 255, 255);
+border-color: rgb(64, 66, 68);
+
+border-radius:10px;
+padding:6px;
+}
+QPushButton#pushButton_huf:hover{
+
+background-color: rgb(0, 255, 127);
+border-radius:10px;
+padding:6px;
+color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>解压</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

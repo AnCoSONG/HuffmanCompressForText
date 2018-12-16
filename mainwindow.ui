@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>造字工房-悦黑</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_maintitle">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>20</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 特粗</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 58, 63);</string>
+    </property>
+    <property name="text">
+     <string>哈夫曼压缩/解压工具</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_team">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>280</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>造字工房-悦黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 58, 63);</string>
+    </property>
+    <property name="text">
+     <string>Made By No.13 Team</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>19</y>
+      <width>360</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 233, 239, 255), stop:1 rgba(157, 226, 255, 255));
+
+border-radius:20px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>130</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 粗体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_start{
+
+background-color: rgb(65, 58, 63);
+	color: rgb(255, 255, 255);
+
+border-radius:10px;
+padding:6px;
+
+}
+QPushButton#pushButton_start:hover{
+background-color: rgb(0, 255, 127);
+
+border-radius:10px;
+padding:6px;
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>开 始</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_help">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>120</y>
+      <width>130</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 粗体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_help{
+
+background-color: rgb(65, 58, 63);
+
+	color: rgb(255, 255, 255);
+border-style:inset;
+
+border-radius:10px;
+padding:6px;
+}
+QPushButton#pushButton_help:hover{
+background-color: rgb(136, 134, 141);
+border-radius:10px;
+padding:6px;
+color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>使用帮助</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>25</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 粗体</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_close{
+border-style:inset;
+
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+	image: url(:/img/close.png);
+
+}
+QPushButton#pushButton_close:hover{
+background-color: rgb(255, 0, 0);
+	
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_setting">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>270</y>
+      <width>31</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>苹方 粗体</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_setting{
+image: url(:/img/set.png);
+border-style:inset;
+
+border-radius:10px;
+padding:6px;
+}
+
+QPushButton#pushButton_setting:hover{
+background-color: rgb(255, 255, 255);
+border-radius:10px;
+padding:6px;
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>60</y>
+      <width>350</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 58, 63);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_min">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>25</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_min {
+border-radius:10px;
+image: url(:/img/MINUS.png);
+	background-color: rgb(255, 255, 255);
+}
+QPushButton#pushButton_min:hover{
+background-color: rgb(167, 167, 167);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>label_maintitle</zorder>
+   <zorder>label_team</zorder>
+   <zorder>pushButton_start</zorder>
+   <zorder>pushButton_help</zorder>
+   <zorder>pushButton_close</zorder>
+   <zorder>pushButton_setting</zorder>
+   <zorder>line</zorder>
+   <zorder>pushButton_min</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

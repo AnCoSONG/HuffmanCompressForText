@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/set.png</file>
+        <file>img/MINUS.png</file>
+        <file>img/close.png</file>
+    </qresource>
+</RCC>
